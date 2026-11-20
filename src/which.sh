@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 #
 # which.sh -- find where an executable is located.  It's here because the
 # "which" command is not supported everywhere.  Used by Makefile.
