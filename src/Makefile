@@ -2864,7 +2864,9 @@ INSTALLMLARGS = $(VIMNAME) $(VIMDIFFNAME) $(EVIMNAME) \
 		$(GVIMNAME) $(GVIEWNAME) $(RGVIMNAME) $(RGVIEWNAME) \
 		$(GVIMDIFFNAME) $(EVIEWNAME)
 
-installmanlinks:
+# installml.sh only links pages next to an existing vim.1, which installrtbase
+# installs; without this prerequisite "make -j install" can skip them silently.
+installmanlinks: installrtbase
 	-$(SHELL) ./installml.sh install "$(GUI_MAN_TARGETS)" \
 		$(DEST_MAN) $(INSTALLMLARGS)
 
