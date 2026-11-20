@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 #
 # Spell a file & generate the syntax statements necessary to
 # highlight in vim.  Based on a program from Krishna Gadepalli

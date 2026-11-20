@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Start GUI Vim on a copy of the tutor file.
 
